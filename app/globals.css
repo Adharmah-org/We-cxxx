@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif-display: var(--font-cormorant), var(--font-noto-serif-devanagari), Georgia, serif;
+    --font-sans-body: var(--font-jakarta), var(--font-noto-sans-devanagari), system-ui, sans-serif;
+    --font-mono-index: var(--font-plex-mono), ui-monospace, monospace;
+  }
+
+  html {
+    background-color: #0c0b0a;
+    color: #efeae0;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-sans-body);
+    background-color: #0c0b0a;
+    color: #efeae0;
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background-color: rgba(201, 164, 92, 0.28);
+    color: #efeae0;
+  }
+}
+
+.font-literary {
+  font-family: var(--font-serif-display);
+}
+
+.font-mono-index {
+  font-family: var(--font-mono-index);
+  font-variant-numeric: tabular-nums;
+}
+
+.devanagari-verse {
+  font-family: var(--font-noto-serif-devanagari), var(--font-cormorant), serif;
+  line-height: 1.95;
+}
+
+.nocturnal-canvas {
+  background:
+    radial-gradient(ellipse 80% 55% at 50% -10%, rgba(201, 164, 92, 0.08), transparent 65%),
+    radial-gradient(circle at 85% 25%, rgba(160, 124, 62, 0.05), transparent 45%),
+    #0c0b0a;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "TEJAS · BENIYAAZ.ROOH",
+  "description": "Official literary archive of Indian author, poet, and Marathi playwright Tejas Purvesh Phirake: novels, three-act stage drama, multilingual poetry, Gemini poetry song studio, and realistic voiceovers.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
